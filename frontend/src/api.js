@@ -1,11 +1,6 @@
 import axios from "axios";
 
-// Use the deployed Render backend by default.
-// Set REACT_APP_API_BASE_URL in Create React App,
-// or VITE_API_BASE_URL if your frontend uses Vite.
 const apiBaseURL = (
-  (typeof import.meta !== "undefined" &&
-    import.meta.env?.VITE_API_BASE_URL) ||
   process.env.REACT_APP_API_BASE_URL ||
   "https://driveops-1.onrender.com/api"
 ).trim();
